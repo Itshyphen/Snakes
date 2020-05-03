@@ -3,7 +3,7 @@ canvas {
     padding: 0px;
     margin: 20px;
 }
-body>div{
+.divs{
     width: 440px;
     height: 500px;
     background: maroon;
@@ -11,6 +11,11 @@ body>div{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.buttons{
+    background: maroon;
+    position: relative;
+    display: none;
 }
 .score{
     background: white;
@@ -32,4 +37,9 @@ body>div{
     transform: translate(-50%, -50%);
     background: maroon;
     display: none;
+}
+@media screen and (max-width: 400px) {
+    .buttons {
+        display: block;
+    }
 }

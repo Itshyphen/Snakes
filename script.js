@@ -5,6 +5,7 @@ var lives=3;
 var fps=8;
 var paused=false;
 function startGame() {
+    document.getElementById("bg").play();
     apple=new Component(gs-2,gs-2,"red",14,14);
     obstacle=new Component(gs-2, gs-2, "blue", 3, 3);
     game.start();
@@ -35,7 +36,6 @@ var game = {
 function render() {
     document.getElementById("bg").play();
     if(apple.collide()){
-        eat.play();
         tail++;
         score++;
         document.getElementById("eat").play();
@@ -148,4 +148,24 @@ function keyPush(event){
             paused?game.stop():game.start();
             break;
     }
+}
+//for the phone use
+function moveup() {
+    if(dy!==1){
+        dx=0;dy=-1;}
+}
+
+function movedown() {
+    if(dy!==-1){
+        dx=0;dy=1;}
+}
+
+function moveleft() {
+    if(dx!==1){
+        dx=-1;dy=0;}
+}
+
+function moveright() {
+    if(dx!==-1){
+        dx=1;dy=0;}
 }

@@ -10,11 +10,17 @@
 </head>
 <body onload="startGame()">
 
-<div>
+<div class="divs">
 <canvas id="canvas" width="400" height="400"></canvas>
     <div class="score">
         <b>SCORE:</b><b id="score">0</b>
         <b> | LIVES:</b><b id="lives">3</b>
+    </div><br>
+    <div  class="buttons" style="text-align:center;">
+        <button onclick="moveup()">UP</button><br>
+        <button onclick="moveleft()">LEFT</button>
+        <button onclick="moveright()">RIGHT</button><br>
+        <button onclick="movedown()">DOWN</button>
     </div>
 </div>
 <div class="gameOver"  id="hide">
@@ -23,10 +29,10 @@
         <a href="index.html" class="btn btn-primary" style="background: black;border: black">Play</a>
     </center>
 </div>
-<audio id="eat" src="ext/sound.mp3"></audio>
-<audio id="fail" src="ext/fail.mp3"></audio>
-<audio id="pause" src="ext/flip.wav"></audio>
-<audio id="bg" src="ext/bg.mp3"></audio>
+<audio id="eat" src="sound.mp3"></audio>
+<audio id="fail" src="fail.mp3"></audio>
+<audio id="bg" src="bg.mp3"></audio>
+
 <script src="script.js"></script>
 </body>
 </html>
