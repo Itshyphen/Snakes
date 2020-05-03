@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Snakes!</title>
+</head>
+<body onload="startGame()">
+
+<div>
+<canvas id="canvas" width="400" height="400"></canvas>
+    <div class="score">
+        <b>SCORE:</b><b id="score">0</b>
+        <b> | LIVES:</b><b id="lives">3</b>
+    </div>
+</div>
+<div class="gameOver"  id="hide">
+    <center>
+        <h1>GAME OVER!</h1>
+        <a href="index.html" class="btn btn-primary" style="background: black;border: black">Play</a>
+    </center>
+</div>
+<audio id="eat" src="ext/sound.mp3"></audio>
+<audio id="fail" src="ext/fail.mp3"></audio>
+<audio id="pause" src="ext/flip.wav"></audio>
+<audio id="bg" src="ext/bg.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
